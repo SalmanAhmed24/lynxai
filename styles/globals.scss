@@ -1,0 +1,99 @@
+@import url('http://fonts.cdnfonts.com/css/futura-md-bt');
+@import url('http://fonts.cdnfonts.com/css/souvenir');
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+	font-size: 10px;
+	background: rgb(0, 0, 0);
+	background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(11, 31, 52, 1) 90%);
+	color: #fff;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	font-family: 'Futura XBlk BT', sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Futura Md BT', sans-serif;
+}
+p,
+a,
+span,
+li {
+	font-family: 'Souvenir', sans-serif;
+}
+$primary-color: #000;
+$overlay-color: #0b1f34;
+$prim-padding: 3rem 5rem;
+@mixin highlighted-button {
+	padding: .5rem 2rem;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #000;
+	font-size: 1.8rem;
+	transition: 0.3s ease-in-out;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Futura Md BT', sans-serif;
+	&:hover {
+		background-color: #000;
+		cursor: pointer;
+		color: #fff;
+	}
+}
+@mixin simple-button {
+	padding: .5rem 2rem;
+	border-radius: 5px;
+	background-color: #000;
+	font-family: 'Futura Md BT', sans-serif;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 1.8rem;
+	transition: 0.3s ease-in-out;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	&:hover {
+		background-color: #fff;
+		cursor: pointer;
+		border: 1px solid #fff;
+		color: #000;
+	}
+}
+@mixin flexRowCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+@mixin flexColCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@import '../components/navbar/navbar.scss';
+@import '../components/heroSection/hero.scss';
+@import '../components/manageSection/manage.scss';
+@import '../components//ourProduct/product.scss';
+@import '../components/chooseUs/chooseUs.scss';
+@import '../components/DemoSection/demo.scss';

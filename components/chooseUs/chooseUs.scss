@@ -1,0 +1,78 @@
+.choose-con {
+	@include flexColCenter;
+	padding: 3rem 5rem 5rem 5rem;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	.choose-h-wrap {
+		h1 {
+			font-size: 5rem;
+			font-family: 'Souvenir', sans-serif;
+			text-transform: uppercase;
+			font-weight: 400;
+			span {
+				font-size: 5rem;
+				font-family: 'Futura XBlk BT', sans-serif;
+				color: transparent;
+				text-transform: uppercase;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: #fff;
+			}
+		}
+	}
+}
+.choose-card-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	.choose-card {
+		height: 220px;
+		width: 400px;
+		border-radius: 30px;
+		background: rgba(255, 255, 255, 0.2);
+		position: relative;
+		padding: 2rem;
+		backdrop-filter: blur(3px);
+		transition: 0.3s ease-in-out;
+		border: 1px solid #fff;
+		@include flexColCenter;
+		&:hover {
+			box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.7);
+		}
+		.choose-p {
+			font-size: 2.7rem;
+			width: 100%;
+			text-align: center;
+		}
+		.choose-info {
+			text-align: center;
+			font-size: 1.8rem;
+			margin-top: 1rem;
+			line-height: 3rem;
+		}
+	}
+}
+.choose-bg-img {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	z-index: -1;
+	width: 8%;
+	animation-name: question;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes question {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}

@@ -1,0 +1,64 @@
+.manage-sec {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3rem 5rem;
+	.manage-h-wrap {
+		width: 50%;
+		h1 {
+			font-size: 5rem;
+			font-family: 'Souvenir', sans-serif;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		p {
+			font-size: 5rem;
+			font-family: 'Futura XBlk BT', sans-serif;
+			color: transparent;
+			text-transform: uppercase;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #fff;
+		}
+		ul {
+			margin-top: 3rem;
+			padding-left: 3rem;
+			font-size: 2.5rem;
+			letter-spacing: 1px;
+			line-height: 5rem;
+		}
+		.high-btn-wrap {
+			display: flex;
+			justify-content: flex-start;
+			.high-btn {
+				@include highlighted-button;
+				margin-left: 3rem;
+				margin-top: 2rem;
+			}
+		}
+	}
+	.manage-img-wrap {
+		width: 50%;
+		@include flexColCenter;
+		overflow: hidden;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 10px;
+		box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.7);
+		img {
+			width: auto;
+			animation-name: hero-bg;
+			animation-timing-function: ease-in-out;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+	}
+}
+@keyframes hero-bg {
+	0% {
+		transform: translateY(-5%);
+	}
+	50% {
+		transform: translateY(5%);
+	}
+	100% {
+		transform: translateY(-5%);
+	}
+}

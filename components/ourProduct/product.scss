@@ -1,0 +1,76 @@
+.product-con {
+	@include flexColCenter;
+	padding: 3rem 5rem 5rem 5rem;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	.product-h-wrap {
+		h1 {
+			font-size: 5rem;
+			font-family: 'Souvenir', sans-serif;
+			text-transform: uppercase;
+			font-weight: 400;
+			span {
+				font-size: 5rem;
+				font-family: 'Futura XBlk BT', sans-serif;
+				color: transparent;
+				text-transform: uppercase;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: #fff;
+			}
+		}
+	}
+}
+.product-card-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	.prod-card {
+		height: 350px;
+		width: 400px;
+		border-radius: 30px;
+		background: rgba(255, 255, 255, 0.2);
+		position: relative;
+		padding: 2rem;
+		backdrop-filter: blur(3px);
+		transition: 0.3s ease-in-out;
+		border: 1px solid #fff;
+		@include flexColCenter;
+		&:hover {
+			box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.7);
+		}
+		.prod-p {
+			font-size: 3rem;
+			width: 100%;
+			padding-left: 2rem;
+		}
+		.prod-list {
+			font-size: 2rem;
+			width: 100%;
+			padding: 2rem;
+			height: 300px;
+		}
+	}
+}
+.prod-bg-img {
+	position: absolute;
+	left: 0%;
+	bottom: -5%;
+	z-index: -1;
+	width: 25%;
+}
+.product-btn-wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	.simple-btn {
+		@include simple-button;
+		margin-right: 2rem;
+	}
+	.high-btn {
+		@include highlighted-button;
+	}
+}

@@ -1,0 +1,55 @@
+.demo-con {
+	@include flexColCenter;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	height: 400px;
+	background-image: url('../../public/images/demo.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		background-color: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(5px);
+		z-index: 1;
+	}
+	.demo-wrap {
+		z-index: 2;
+		.demo-h-wrap {
+			h1 {
+				font-size: 7rem;
+				font-family: 'Souvenir', sans-serif;
+				text-transform: uppercase;
+				font-weight: 400;
+				span {
+					font-size: 7rem;
+					font-family: 'Futura XBlk BT', sans-serif;
+					color: transparent;
+					text-transform: uppercase;
+					-webkit-text-stroke-width: 2px;
+					-webkit-text-stroke-color: #fff;
+				}
+			}
+		}
+	}
+	.demo-btn {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 2rem;
+		.simple-btn {
+			@include simple-button;
+			margin-right: 2rem;
+		}
+		.high-btn {
+			@include highlighted-button;
+		}
+	}
+}
