@@ -7,7 +7,7 @@ function ManageSection() {
 				<ul>
 					<li>We have an EU Taxonomy tool</li>
 					<li>You can set your ESG standards</li>
-					<li>Have your clients' ESG standards controlled</li>
+					<li>Have your client&apos;s ESG standards controlled</li>
 					<li>Create your Taxonomy Claim</li>
 					<li>Match ESG standards with investments</li>
 				</ul>
