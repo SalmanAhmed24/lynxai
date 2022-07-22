@@ -7,12 +7,12 @@
 	.product-h-wrap {
 		h1 {
 			font-size: 5rem;
-			font-family: 'Souvenir', sans-serif;
+			font-family: 'Souvenir', sans-serif !important;
 			text-transform: uppercase;
 			font-weight: 400;
 			span {
 				font-size: 5rem;
-				font-family: 'Futura XBlk BT', sans-serif;
+				font-family: 'Futura XBlk BT', sans-serif !important;
 				color: transparent;
 				text-transform: uppercase;
 				-webkit-text-stroke-width: 2px;

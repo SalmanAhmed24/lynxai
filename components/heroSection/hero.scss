@@ -16,9 +16,9 @@
 	font-size: 7rem;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-family: 'Souvenir', sans-serif;
+	font-family: 'Souvenir', sans-serif !important;
 	.upper {
-		font-family: 'Futura XBlk BT', sans-serif;
+		font-family: 'Futura XBlk BT', sans-serif !important;
 		color: transparent;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #fff;
@@ -27,10 +27,10 @@
 .lower-h {
 	font-size: 7rem;
 	text-transform: uppercase;
-	font-family: 'Souvenir', sans-serif;
+	font-family: 'Souvenir', sans-serif !important;
 	font-weight: 400;
 	.lower {
-		font-family: 'Futura XBlk BT', sans-serif;
+		font-family: 'Futura XBlk BT', sans-serif !important;
 		color: transparent;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #fff;

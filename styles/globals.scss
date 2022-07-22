@@ -11,7 +11,6 @@ body {
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
-	font-family: 'Futura Md BT', 'Futura XBlk BT', 'Souvenir', sans-serif;
 }
 
 a {
@@ -25,20 +24,20 @@ a {
 	padding: 0px;
 }
 h1 {
-	font-family: 'Futura XBlk BT', sans-serif;
+	font-family: 'Futura XBlk BT', sans-serif !important;
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Futura Md BT', sans-serif;
+	font-family: 'Futura Md BT', sans-serif !important;
 }
 p,
 a,
 span,
 li {
-	font-family: 'Souvenir', sans-serif;
+	font-family: 'Souvenir', sans-serif !important;
 }
 $primary-color: #000;
 $overlay-color: #0b1f34;
@@ -53,7 +52,7 @@ $prim-padding: 3rem 5rem;
 	transition: 0.3s ease-in-out;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-family: 'Futura Md BT', sans-serif;
+	font-family: 'Futura Md BT', sans-serif !important;
 	&:hover {
 		background-color: #000;
 		cursor: pointer;
@@ -64,7 +63,7 @@ $prim-padding: 3rem 5rem;
 	padding: .5rem 2rem;
 	border-radius: 5px;
 	background-color: #000;
-	font-family: 'Futura Md BT', sans-serif;
+	font-family: 'Futura Md BT', sans-serif !important;
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 1.8rem;
