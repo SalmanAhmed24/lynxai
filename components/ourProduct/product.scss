@@ -10,6 +10,9 @@
 			font-family: 'Souvenir', sans-serif !important;
 			text-transform: uppercase;
 			font-weight: 400;
+			@include from-320-to-575 {
+				font-size: 4rem;
+			}
 			span {
 				font-size: 5rem;
 				font-family: 'Futura XBlk BT', sans-serif !important;
@@ -17,6 +20,9 @@
 				text-transform: uppercase;
 				-webkit-text-stroke-width: 2px;
 				-webkit-text-stroke-color: #fff;
+				@include from-320-to-575 {
+					font-size: 4rem;
+				}
 			}
 		}
 	}
@@ -37,6 +43,11 @@
 		backdrop-filter: blur(3px);
 		transition: 0.3s ease-in-out;
 		border: 1px solid #fff;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		@include from-320-to-420 {
+			height: 200px;
+		}
 		@include flexColCenter;
 		&:hover {
 			box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.7);
@@ -58,8 +69,24 @@
 	position: absolute;
 	left: 0%;
 	bottom: -5%;
+	@include from-320-to-992 {
+		bottom: 0%;
+		top: 0%;
+		margin: auto 0;
+		left: -78%;
+	}
 	z-index: -1;
 	width: 25%;
+	@include from-320-to-420 {
+		left: -85%;
+	}
+	@include from-320-to-575 {
+		width: 100%;
+	}
+	@include from-992-to-1500 {
+		width: 30%;
+		bottom: 20%;
+	}
 }
 .product-btn-wrap {
 	display: flex;

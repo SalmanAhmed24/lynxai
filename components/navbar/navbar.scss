@@ -2,6 +2,9 @@
 	display: flex;
 	box-shadow: 0 1px 10px rgba(255, 255, 255, 0.5);
 	padding: 2rem 4rem;
+	@include from-320-to-992 {
+		display: none;
+	}
 	.logo-wrap {
 		width: 10%;
 		min-width: 140px;
@@ -15,12 +18,18 @@
 		display: flex;
 		justify-content: flex-end;
 		list-style: none;
+		@include from-992-to-1500 {
+			width: 47%;
+		}
 		li {
 			margin-right: 4rem;
 			font-size: 2.5rem;
 			text-transform: capitalize;
 			align-self: center;
 			transition: 0.3s ease-in-out;
+			@include from-992-to-1500 {
+				font-size: 2rem;
+			}
 			&:hover {
 				transform: scale(1.1);
 				cursor: pointer;
@@ -29,16 +38,74 @@
 	}
 	.cat-btn-wrap {
 		width: 30%;
-		min-width: 400px;
+		// min-width: 400px;
 		display: flex;
+		@include from-992-to-1500 {
+			width: 43%;
+		}
 		.simple-btn {
 			@include simple-button;
 			align-self: center;
 			margin-right: 2rem;
+			@include from-992-to-1500 {
+				letter-spacing: 0px;
+				margin-right: 1rem;
+			}
 		}
 		.high-btn {
 			@include highlighted-button;
 			align-self: center;
+			@include from-992-to-1500 {
+				letter-spacing: 0px;
+			}
 		}
+	}
+}
+.mobile {
+	display: none;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 2rem 5rem;
+	@include from-320-to-992 {
+		display: block;
+	}
+	.bar-wrap {
+		display: flex;
+		justify-content: flex-end;
+		img {
+			width: 50px;
+		}
+	}
+}
+.logo-inner-wrap {
+	@include flexColCenter;
+	img {
+		width: 70%;
+		margin-top: 2rem;
+	}
+}
+.inner-content {
+	padding-left: 5rem;
+	padding-top: 5rem;
+	p {
+		font-size: 3rem;
+		padding-bottom: 2rem;
+		color: #fff;
+	}
+}
+.MuiDrawer-paper {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.cat-btn-inner-wrap {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	.simple-btn {
+		@include simple-button;
+		margin-bottom: 2rem;
+		align-self: flex-start;
+	}
+	.high-btn {
+		@include highlighted-button;
+		align-self: flex-start;
 	}
 }

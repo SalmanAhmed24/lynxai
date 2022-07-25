@@ -1,4 +1,24 @@
 @import './fonts.scss';
+@mixin from-992-to-1500 {
+	@media screen and (min-width: 992px) and (max-width: 1500px) {
+		@content;
+	}
+}
+@mixin from-320-to-992 {
+	@media screen and (min-width: 320px) and (max-width: 992px) {
+		@content;
+	}
+}
+@mixin from-320-to-575 {
+	@media screen and (min-width: 320px) and (max-width: 575px) {
+		@content;
+	}
+}
+@mixin from-320-to-420 {
+	@media screen and (min-width: 320px) and (max-width: 420px) {
+		@content;
+	}
+}
 html,
 body {
 	padding: 0;
@@ -10,6 +30,9 @@ body {
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
+	@include from-320-to-420 {
+		font-size: 7px;
+	}
 }
 
 a {
@@ -41,6 +64,7 @@ li {
 $primary-color: #000;
 $overlay-color: #0b1f34;
 $prim-padding: 3rem 5rem;
+$mobile-padding: 2rem;
 @mixin highlighted-button {
 	padding: .5rem 2rem;
 	border-radius: 5px;
@@ -88,6 +112,7 @@ $prim-padding: 3rem 5rem;
 	justify-content: center;
 	align-items: center;
 }
+
 @import '../components/navbar/navbar.scss';
 @import '../components/heroSection/hero.scss';
 @import '../components/manageSection/manage.scss';

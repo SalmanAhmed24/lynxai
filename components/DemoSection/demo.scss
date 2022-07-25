@@ -28,6 +28,9 @@
 				font-family: 'Souvenir', sans-serif !important;
 				text-transform: uppercase;
 				font-weight: 400;
+				@include from-320-to-575 {
+					font-size: 5rem;
+				}
 				span {
 					font-size: 7rem;
 					font-family: 'Futura XBlk BT', sans-serif !important;
@@ -35,6 +38,9 @@
 					text-transform: uppercase;
 					-webkit-text-stroke-width: 2px;
 					-webkit-text-stroke-color: #fff;
+					@include from-320-to-575 {
+						font-size: 5rem;
+					}
 				}
 			}
 		}

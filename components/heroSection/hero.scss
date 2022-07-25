@@ -2,6 +2,9 @@
 	@include flexColCenter;
 	padding: $prim-padding;
 	position: relative;
+	@include from-320-to-575 {
+		padding: $mobile-padding;
+	}
 	.bg-hero {
 		width: 100%;
 		height: 600px;
@@ -10,6 +13,9 @@
 		border-radius: 10px;
 		@include flexColCenter;
 		z-index: 2;
+		@include from-320-to-575 {
+			height: 400px;
+		}
 	}
 }
 .upper-h {
@@ -17,6 +23,15 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	font-family: 'Souvenir', sans-serif !important;
+	@include from-992-to-1500 {
+		text-align: center;
+	}
+	@include from-320-to-992 {
+		text-align: center;
+	}
+	@include from-320-to-575 {
+		font-size: 4rem;
+	}
 	.upper {
 		font-family: 'Futura XBlk BT', sans-serif !important;
 		color: transparent;
@@ -29,6 +44,15 @@
 	text-transform: uppercase;
 	font-family: 'Souvenir', sans-serif !important;
 	font-weight: 400;
+	@include from-992-to-1500 {
+		text-align: center;
+	}
+	@include from-320-to-992 {
+		text-align: center;
+	}
+	@include from-320-to-575 {
+		font-size: 4rem;
+	}
 	.lower {
 		font-family: 'Futura XBlk BT', sans-serif !important;
 		color: transparent;
@@ -48,6 +72,14 @@
 	right: 50px;
 	width: 22%;
 	z-index: 1;
+	@include from-992-to-1500 {
+		width: 28%;
+	}
+	@include from-320-to-575 {
+		width: 45%;
+		bottom: -10%;
+		right: -12%;
+	}
 	// animation-name: hero-bg;
 	// animation-timing-function: ease-in-out;
 	// animation-duration: 5s;

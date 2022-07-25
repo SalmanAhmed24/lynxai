@@ -2,13 +2,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 3rem 5rem;
+	@include from-320-to-575 {
+		padding: $mobile-padding;
+	}
 	.manage-h-wrap {
 		width: 50%;
+		@include from-320-to-992 {
+			width: 100%;
+		}
 		h1 {
 			font-size: 5rem;
 			font-family: 'Souvenir', sans-serif !important;
 			text-transform: uppercase;
 			font-weight: 400;
+			@include from-320-to-575 {
+				font-size: 4rem;
+			}
 		}
 		p {
 			font-size: 5rem;
@@ -17,6 +26,9 @@
 			text-transform: uppercase;
 			-webkit-text-stroke-width: 2px;
 			-webkit-text-stroke-color: #fff;
+			@include from-320-to-575 {
+				font-size: 4rem;
+			}
 		}
 		ul {
 			margin-top: 3rem;
@@ -37,6 +49,10 @@
 	}
 	.manage-img-wrap {
 		width: 50%;
+		@include from-320-to-992 {
+			width: 100%;
+			margin-top: 2rem;
+		}
 		@include flexColCenter;
 		overflow: hidden;
 		background: rgba(255, 255, 255, 0.2);
