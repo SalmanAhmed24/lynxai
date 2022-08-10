@@ -10,7 +10,7 @@
 	.choose-h-wrap {
 		h1 {
 			font-size: 5rem;
-			font-family: 'Souvenir', sans-serif !important;
+			font-family: 'F37gingerpro', sans-serif !important;
 			text-transform: uppercase;
 			font-weight: 400;
 			@include from-320-to-575 {
@@ -18,7 +18,7 @@
 			}
 			span {
 				font-size: 5rem;
-				font-family: 'Futura XBlk BT', sans-serif !important;
+				font-family: 'F37gingerpro', sans-serif !important;
 				color: transparent;
 				text-transform: uppercase;
 				-webkit-text-stroke-width: 2px;
@@ -40,7 +40,7 @@
 		height: 220px;
 		width: 400px;
 		border-radius: 30px;
-		background: rgba(255, 255, 255, 0.2);
+		background: transparentize($color: #0b1f34, $amount: 0.3);
 		position: relative;
 		padding: 2rem;
 		backdrop-filter: blur(3px);
@@ -50,7 +50,7 @@
 		margin-top: 2rem;
 		@include flexColCenter;
 		&:hover {
-			box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.7);
+			box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
 		}
 		.choose-p {
 			font-size: 2.7rem;

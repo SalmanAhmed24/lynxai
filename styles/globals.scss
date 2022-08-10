@@ -46,27 +46,27 @@ a {
 	padding: 0px;
 }
 h1 {
-	font-family: 'Futura XBlk BT', sans-serif !important;
+	font-family: 'F37gingerpro', sans-serif !important;
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Futura Md BT', sans-serif !important;
+	font-family: 'F37gingerpro', sans-serif !important;
 }
 p,
 a,
 span,
 li {
-	font-family: 'Souvenir', sans-serif !important;
+	font-family: 'F37gingerpro', sans-serif !important;
 }
 $primary-color: #000;
 $overlay-color: #0b1f34;
 $prim-padding: 3rem 5rem;
 $mobile-padding: 2rem;
 @mixin highlighted-button {
-	padding: .5rem 2rem;
+	padding: 1rem 2rem;
 	border-radius: 5px;
 	background-color: #fff;
 	border: 1px solid #fff;
@@ -75,7 +75,7 @@ $mobile-padding: 2rem;
 	transition: 0.3s ease-in-out;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-family: 'Futura Md BT', sans-serif !important;
+	font-family: 'F37gingerpro', sans-serif !important;
 	&:hover {
 		background-color: #000;
 		cursor: pointer;
@@ -83,10 +83,10 @@ $mobile-padding: 2rem;
 	}
 }
 @mixin simple-button {
-	padding: .5rem 2rem;
+	padding: 1rem 2rem;
 	border-radius: 5px;
 	background-color: #000;
-	font-family: 'Futura Md BT', sans-serif !important;
+	font-family: 'F37gingerpro', sans-serif !important;
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 1.8rem;
