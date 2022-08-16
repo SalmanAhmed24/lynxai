@@ -1,13 +1,14 @@
 .demo-con {
 	@include flexColCenter;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	height: 400px;
+	margin-top: 12rem;
+	height: 600px;
 	background-image: url('../../public/images/demo.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	z-index: 2;
+	clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0 100%, 0 0, 50% 5%);
 	.overlay {
 		width: 100%;
 		height: 100%;
@@ -34,10 +35,9 @@
 				span {
 					font-size: 7rem;
 					font-family: 'F37gingerpro', sans-serif !important;
-					color: transparent;
+
 					text-transform: uppercase;
-					-webkit-text-stroke-width: 2px;
-					-webkit-text-stroke-color: #fff;
+
 					@include from-320-to-575 {
 						font-size: 5rem;
 					}

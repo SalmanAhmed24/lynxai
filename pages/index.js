@@ -13,9 +13,21 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<HeroSection />
+			<div className="arrow-gif-con">
+				<img className="arrow-gif" src="./images/arrow.gif" />
+			</div>
 			<ManageSection />
+			<div className="arrow-gif-con">
+				<img className="arrow-gif" src="./images/arrow.gif" />
+			</div>
 			<OurProduct />
+			<div className="arrow-gif-con">
+				<img className="arrow-gif" src="./images/arrow.gif" />
+			</div>
 			<ChooseUs />
+			<div className="arrow-gif-con">
+				<img className="arrow-gif" src="./images/arrow.gif" />
+			</div>
 			<DemoSection />
 		</div>
 	);

@@ -1,7 +1,14 @@
 .bg-hero-con {
 	@include flexColCenter;
+	z-index: 2;
 	padding: $prim-padding;
+	padding-top: 10rem;
 	position: relative;
+	background-image: url('../../public/images/eu-taxonomy.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
 	@include from-320-to-575 {
 		padding: $mobile-padding;
 	}
@@ -9,7 +16,7 @@
 		width: 100%;
 		height: 600px;
 		background-color: transparentize($color: #0b1f34, $amount: 0.8);
-		backdrop-filter: blur(0px);
+		backdrop-filter: blur(3px);
 		box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 		border-radius: 10px;
 		@include flexColCenter;
@@ -24,6 +31,7 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	font-family: 'F37gingerpro', sans-serif !important;
+	color: #fff;
 	@include from-992-to-1500 {
 		text-align: center;
 	}
@@ -35,9 +43,6 @@
 	}
 	.upper {
 		font-family: 'F37gingerpro', sans-serif !important;
-		color: transparent;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: #fff;
 	}
 }
 .lower-h {
@@ -45,6 +50,7 @@
 	text-transform: uppercase;
 	font-family: 'F37gingerpro', sans-serif !important;
 	font-weight: 400;
+	color: #fff;
 	@include from-992-to-1500 {
 		text-align: center;
 	}
@@ -56,15 +62,16 @@
 	}
 	.lower {
 		font-family: 'F37gingerpro', sans-serif !important;
-		color: transparent;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: #fff;
 	}
 }
 .hero-btn-wrap {
 	margin-top: 4rem;
 	.high-btn {
 		@include highlighted-button;
+	}
+	.simple-btn {
+		margin-left: 1rem;
+		@include simple-button;
 	}
 }
 .bg-hero-img {

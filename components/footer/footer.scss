@@ -1,0 +1,140 @@
+.footer-con {
+	box-shadow: 0 1px 10px rgba(255, 255, 255, 0.5);
+	padding: 4rem 4rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	div {
+		width: 33.33%;
+		@include from-320-to-992 {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}
+.logo-sec {
+	display: flex;
+	flex-direction: column;
+	.logo {
+		margin-bottom: 2rem;
+		@include from-320-to-992 {
+			text-align: center;
+		}
+		.logo-footer {
+			width: 90%;
+			@include from-320-to-992 {
+				width: 200px;
+			}
+		}
+	}
+	.footer-p {
+		font-size: 2rem;
+		line-height: 30px;
+		margin-bottom: 3rem;
+		font-weight: 300;
+	}
+	.footer-btn-wrap {
+		width: 100%;
+		.highlighted-btn {
+			@include highlighted-button;
+			font-size: 1.4rem;
+		}
+	}
+}
+.quick-links-h {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.footer-links {
+	margin-top: 3rem;
+	list-style: none;
+	li {
+		font-size: 2rem;
+		font-family: thin;
+		margin-bottom: 2rem;
+		transition: 0.3s ease-in-out;
+		@include from-320-to-992 {
+			text-align: center;
+		}
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.04);
+		}
+	}
+}
+.req-demo {
+	width: 100% !important;
+	margin-top: 1rem;
+	display: flex;
+	h2 {
+		font-weight: thin;
+		width: 100%;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		&:hover {
+			cursor: pointer;
+			span {
+				animation-name: arrowHov;
+				animation-timing-function: ease-in-out;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+		}
+		span {
+			display: inline-block;
+			color: #fff;
+			transition: 0.3s ease-in-out;
+			margin-left: 5px;
+		}
+	}
+}
+.contact-sec {
+	p {
+		font-size: 2rem;
+		margin-top: 2rem;
+		font-weight: 400;
+		line-height: 30px;
+	}
+	.social-icons-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		img {
+			transition: 0.3s ease-in-out;
+			&:hover {
+				transform: rotate(10deg);
+				cursor: pointer;
+			}
+		}
+	}
+	.contact-wrap {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		@include from-320-to-992 {
+			text-align: center;
+		}
+		a {
+			margin-bottom: 1rem;
+			font-size: 1.6rem;
+			span {
+				display: inline-block;
+				margin-right: 1rem;
+				font-weight: bold;
+			}
+		}
+	}
+}
+@keyframes arrowHov {
+	0% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(10px);
+	}
+}

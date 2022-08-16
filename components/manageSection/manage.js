@@ -15,9 +15,7 @@ function ManageSection() {
 					<span className="high-btn">See Our Product Demo</span>
 				</div>
 			</div>
-			<div className="manage-img-wrap">
-				<img src="./images/eu-tool.png" />
-			</div>
+			<div className="manage-img-wrap">{/* <img src="./images/eu-taxonomy-3.png" /> */}</div>
 		</section>
 	);
 }

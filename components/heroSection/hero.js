@@ -12,9 +12,9 @@ function HeroSection() {
 				</div>
 				<div className="hero-btn-wrap">
 					<span className="high-btn">Request a demo</span>
+					<span className="simple-btn">Know More</span>
 				</div>
 			</section>
-			<img src="./images/hero-bg.png" className="bg-hero-img" />
 		</main>
 	);
 }

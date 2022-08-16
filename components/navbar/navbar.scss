@@ -2,6 +2,12 @@
 	display: flex;
 	box-shadow: 0 1px 10px rgba(255, 255, 255, 0.5);
 	padding: 2rem 4rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	// position: fixed;
+	// top: 0;
+	width: 100%;
+	// z-index: 333;
 	@include from-320-to-992 {
 		display: none;
 	}
@@ -40,6 +46,7 @@
 		width: 30%;
 		// min-width: 400px;
 		display: flex;
+		justify-content: flex-end;
 		@include from-992-to-1500 {
 			width: 43%;
 		}
@@ -63,7 +70,7 @@
 }
 .mobile {
 	display: none;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0);
 	padding: 2rem 5rem;
 	@include from-320-to-992 {
 		display: block;
@@ -71,29 +78,37 @@
 	.bar-wrap {
 		display: flex;
 		justify-content: flex-end;
-		img {
-			width: 50px;
+		.bar {
+			font-size: 40px;
+			color: #fff;
 		}
 	}
 }
 .logo-inner-wrap {
 	@include flexColCenter;
 	img {
-		width: 70%;
+		align-self: flex-start;
+		width: 60%;
 		margin-top: 2rem;
+		margin-left: 2rem;
 	}
 }
 .inner-content {
 	padding-left: 5rem;
 	padding-top: 5rem;
-	p {
+	ul {
 		font-size: 3rem;
 		padding-bottom: 2rem;
 		color: #fff;
+		list-style: none;
+		li {
+			margin-bottom: 2rem;
+		}
 	}
 }
 .MuiDrawer-paper {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
 }
 .cat-btn-inner-wrap {
 	display: flex;
@@ -108,4 +123,17 @@
 		@include highlighted-button;
 		align-self: flex-start;
 	}
+}
+.scroll-navbar {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 5px 5px #a2a2a2;
+	z-index: 333;
+}
+.nav-cus-fixed {
+	position: fixed;
+	z-index: 333;
+	width: 100%;
 }

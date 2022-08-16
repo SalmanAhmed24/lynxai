@@ -1,9 +1,15 @@
 .product-con {
 	@include flexColCenter;
-	padding: 3rem 5rem 5rem 5rem;
+	padding: 9rem 5rem 5rem 5rem;
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
+	margin-top: 12rem;
+	background-image: url('../../public/images/eu-tax-b.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	clip-path: polygon(100% 0%, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 5%);
 	.product-h-wrap {
 		h1 {
 			font-size: 5rem;
@@ -16,10 +22,8 @@
 			span {
 				font-size: 5rem;
 				font-family: 'F37gingerpro', sans-serif !important;
-				color: transparent;
 				text-transform: uppercase;
-				-webkit-text-stroke-width: 2px;
-				-webkit-text-stroke-color: #fff;
+
 				@include from-320-to-575 {
 					font-size: 4rem;
 				}
@@ -46,7 +50,7 @@
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 		@include from-320-to-420 {
-			height: 200px;
+			height: 250px;
 		}
 		@include flexColCenter;
 		&:hover {
@@ -99,8 +103,10 @@
 	.simple-btn {
 		@include simple-button;
 		margin-right: 2rem;
+		box-shadow: 0 0 3px #fff;
 	}
 	.high-btn {
 		@include highlighted-button;
+		box-shadow: 0 0 3px #fff;
 	}
 }

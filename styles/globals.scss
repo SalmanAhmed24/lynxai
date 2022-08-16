@@ -9,6 +9,11 @@
 		@content;
 	}
 }
+@mixin from-575-to-992 {
+	@media screen and (min-width: 574.97px) and (max-width: 992px) {
+		@content;
+	}
+}
 @mixin from-320-to-575 {
 	@media screen and (min-width: 320px) and (max-width: 575px) {
 		@content;
@@ -47,6 +52,9 @@ a {
 }
 h1 {
 	font-family: 'F37gingerpro', sans-serif !important;
+	@include from-320-to-575 {
+		text-align: center;
+	}
 }
 h2,
 h3,
@@ -54,6 +62,15 @@ h4,
 h5,
 h6 {
 	font-family: 'F37gingerpro', sans-serif !important;
+	@include from-320-to-575 {
+		text-align: center;
+	}
+}
+p,
+span {
+	@include from-320-to-575 {
+		text-align: center;
+	}
 }
 p,
 a,
@@ -64,20 +81,20 @@ li {
 $primary-color: #000;
 $overlay-color: #0b1f34;
 $prim-padding: 3rem 5rem;
-$mobile-padding: 2rem;
+$mobile-padding: 9rem 2rem;
 @mixin highlighted-button {
 	padding: 1rem 2rem;
 	border-radius: 5px;
-	background-color: #fff;
-	border: 1px solid #fff;
-	color: #000;
+	background-color: rgba(11, 31, 52, 1);
+	border: 1px solid rgba(11, 31, 52, 1);
+	color: #fff;
 	font-size: 1.8rem;
 	transition: 0.3s ease-in-out;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: 'F37gingerpro', sans-serif !important;
 	&:hover {
-		background-color: #000;
+		background-color: rgba(11, 31, 52, 0.7);
 		cursor: pointer;
 		color: #fff;
 	}
@@ -87,17 +104,17 @@ $mobile-padding: 2rem;
 	border-radius: 5px;
 	background-color: #000;
 	font-family: 'F37gingerpro', sans-serif !important;
-	border: 1px solid #fff;
+	border: 1px solid #000;
 	color: #fff;
 	font-size: 1.8rem;
 	transition: 0.3s ease-in-out;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	&:hover {
-		background-color: #fff;
+		background-color: rgba(0, 0, 0, 0.7);
 		cursor: pointer;
-		border: 1px solid #fff;
-		color: #000;
+		border: 1px solid #000;
+		color: #fff;
 	}
 }
 @mixin flexRowCenter {
@@ -112,10 +129,27 @@ $mobile-padding: 2rem;
 	justify-content: center;
 	align-items: center;
 }
-
+.arrow-gif-con {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	img {
+		position: absolute;
+		top: -40px;
+		transform: rotate(10deg);
+		bottom: 0px;
+		width: 240px;
+		z-index: 1;
+		@include from-320-to-575 {
+			width: 200px;
+		}
+	}
+}
+@import url('aos/dist/aos.css');
 @import '../components/navbar/navbar.scss';
 @import '../components/heroSection/hero.scss';
 @import '../components/manageSection/manage.scss';
 @import '../components//ourProduct/product.scss';
 @import '../components/chooseUs/chooseUs.scss';
 @import '../components/DemoSection/demo.scss';
+@import '../components/footer/footer.scss';

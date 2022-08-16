@@ -1,7 +1,12 @@
 .manage-sec {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 3rem 5rem;
+	padding: 10rem 5rem;
+	margin-top: 12rem;
+	clip-path: polygon(100% 0%, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 5%);
+	background-color: #2e3852;
+	position: relative;
+	z-index: 22;
 	@include from-320-to-575 {
 		padding: $mobile-padding;
 	}
@@ -22,10 +27,7 @@
 		p {
 			font-size: 5rem;
 			font-family: 'F37gingerpro', sans-serif !important;
-			color: transparent;
 			text-transform: uppercase;
-			-webkit-text-stroke-width: 2px;
-			-webkit-text-stroke-color: #fff;
 			@include from-320-to-575 {
 				font-size: 4rem;
 			}
@@ -49,21 +51,25 @@
 	}
 	.manage-img-wrap {
 		width: 50%;
+		height: 500px;
+		background-image: url('../../public/images/eu-taxonomy-3.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		@include from-320-to-992 {
 			width: 100%;
 			margin-top: 2rem;
 		}
-		@include flexColCenter;
-		overflow: hidden;
-		background: transparentize($color: #0b1f34, $amount: 0.3);
+		// @include flexColCenter;
+		// overflow: hidden;
+		// background: transparentize($color: #0b1f34, $amount: 0.3);
 		border-radius: 10px;
-		box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
+		// box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
 		img {
-			width: auto;
-			animation-name: hero-bg;
-			animation-timing-function: ease-in-out;
-			animation-duration: 5s;
-			animation-iteration-count: infinite;
+			// animation-name: hero-bg;
+			// animation-timing-function: ease-in-out;
+			// animation-duration: 5s;
+			// animation-iteration-count: infinite;
 		}
 	}
 }

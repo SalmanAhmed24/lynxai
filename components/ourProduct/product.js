@@ -44,7 +44,7 @@ function OurProduct() {
 				<span className="simple-btn">Know More</span>
 				<span className="high-btn">Try our demo</span>
 			</div>
-			<img src="./images/data-col-2.png" className="prod-bg-img" />
+			{/* <img src="./images/data-col-2.png" className="prod-bg-img" /> */}
 		</section>
 	);
 }
