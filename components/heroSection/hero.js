@@ -1,20 +1,28 @@
+import { motion } from 'framer-motion';
 function HeroSection() {
 	return (
 		<main className="bg-hero-con">
-			<section className="bg-hero">
-				<div>
-					<h1 className="upper-h">
-						<span className="upper">LYNXAI</span> a data-driven platform
-					</h1>
-					<h1 className="lower-h">
-						Makes ESG Investment <span className="lower">Efficient</span>
-					</h1>
+			<motion.section
+				initial="hidden"
+				animate="visible"
+				variants={{
+					hidden: { opacity: 0, x: 0, transition: { ease: 'easeInOut' } },
+					visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: 'easeInOut' } }
+				}}
+				className="bg-hero"
+			>
+				<div className="desk-hero">
+					<h1 className="upper-h">A data driven platform that makes ESG Investments Efficient</h1>
+				</div>
+				<div className="mobile-hero">
+					<img src="./images/logo.png" />
+					<h1 className="upper-h">A data driven platform that makes ESG Investments Efficient</h1>
 				</div>
 				<div className="hero-btn-wrap">
 					<span className="high-btn">Request a demo</span>
 					<span className="simple-btn">Know More</span>
 				</div>
-			</section>
+			</motion.section>
 		</main>
 	);
 }

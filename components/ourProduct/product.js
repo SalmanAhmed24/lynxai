@@ -1,13 +1,26 @@
 function OurProduct() {
 	return (
-		<section className="product-con">
+		<section
+			className="product-con"
+			data-aos="fade-in"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-once="false"
+		>
 			<div className="product-h-wrap">
 				<h1>
 					Our<span> Products</span>
 				</h1>
 			</div>
 			<div className="product-card-wrap">
-				<div className="prod-card">
+				<div
+					className="prod-card"
+					data-aos="fade-left"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<p className="prod-p">ESG Data Collection</p>
 					<ul className="prod-list">
 						<li>Non-Financial Reports</li>
@@ -18,7 +31,15 @@ function OurProduct() {
 						<li>Customer reviews</li>
 					</ul>
 				</div>
-				<div className="prod-card">
+				<div
+					className="prod-card"
+					data-aos="fade-in"
+					data-aos-delay="500"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<p className="prod-p">ESG Data Monitor</p>
 					<ul className="prod-list">
 						<li>Identification of red flags</li>
@@ -29,7 +50,15 @@ function OurProduct() {
 						<li>Verification of reviewed data</li>
 					</ul>
 				</div>
-				<div className="prod-card">
+				<div
+					className="prod-card"
+					data-aos="fade-right"
+					data-aos-delay="1000"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<p className="prod-p">ESG Data Deliver</p>
 					<ul className="prod-list">
 						<li>Automatic reports for regulators</li>

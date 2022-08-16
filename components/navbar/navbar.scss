@@ -133,7 +133,20 @@
 	z-index: 333;
 }
 .nav-cus-fixed {
+	transition: 0.3s ease-in-out;
 	position: fixed;
 	z-index: 333;
 	width: 100%;
+	animation-name: navbar-ani;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+	animation-iteration-count: once;
+}
+@keyframes navbar-ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

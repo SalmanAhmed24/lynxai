@@ -21,7 +21,7 @@ function Navbar() {
 	};
 	return (
 		<React.Fragment>
-			<nav className={Math.ceil(scrollPosition) < 100 ? 'nav-cus' : 'nav-cus nav-cus-fixed scroll-navbar'}>
+			<nav className={Math.ceil(scrollPosition) < 200 ? 'nav-cus' : 'nav-cus nav-cus-fixed scroll-navbar'}>
 				<motion.div
 					initial="hidden"
 					animate="visible"
