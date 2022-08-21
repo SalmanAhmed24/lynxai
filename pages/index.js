@@ -14,21 +14,9 @@ export default function Home() {
 				<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 			</Head>
 			<HeroSection />
-			<div className="arrow-gif-con">
-				<img className="arrow-gif" src="./images/arrow.gif" />
-			</div>
 			<ManageSection />
-			<div className="arrow-gif-con">
-				<img className="arrow-gif" src="./images/arrow.gif" />
-			</div>
 			<OurProduct />
-			<div className="arrow-gif-con">
-				<img className="arrow-gif" src="./images/arrow.gif" />
-			</div>
 			<ChooseUs />
-			<div className="arrow-gif-con">
-				<img className="arrow-gif" src="./images/arrow.gif" />
-			</div>
 			<DemoSection />
 		</div>
 	);
