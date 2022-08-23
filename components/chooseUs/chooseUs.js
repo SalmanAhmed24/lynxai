@@ -1,12 +1,6 @@
 function ChooseUs() {
 	return (
-		<section
-			className="choose-con"
-			data-aos="fade-in"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-once="false"
-		>
+		<section className="choose-con">
 			<div className="choose-h-wrap">
 				<h1>
 					Why<span> choose Us</span>

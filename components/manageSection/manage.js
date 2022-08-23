@@ -5,24 +5,8 @@ function ManageSection() {
 		AOS.init();
 	}, []);
 	return (
-		<section
-			className="manage-sec"
-			data-aos="fade-in"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false"
-			data-aos-anchor-placement="top-center"
-		>
-			<div
-				className="manage-h-wrap"
-				data-aos="fade-right"
-				data-aos-duration="1000"
-				data-aos-easing="ease-in-out"
-				data-aos-mirror="true"
-				data-aos-once="false"
-				data-aos-anchor-placement="top-center"
-			>
+		<section className="manage-sec">
+			<div className="manage-h-wrap">
 				<h1>We help you manage</h1>
 				<p>EU Taxonomy</p>
 				<ul>
@@ -36,18 +20,7 @@ function ManageSection() {
 					<span className="high-btn">See Our Product Demo</span>
 				</div>
 			</div>
-			<div
-				className="manage-img-wrap"
-				data-aos="fade-left"
-				data-aos-delay="1000"
-				data-aos-duration="1000"
-				data-aos-easing="ease-in-out"
-				data-aos-mirror="true"
-				data-aos-once="false"
-				data-aos-anchor-placement="top-center"
-			>
-				{/* <img src="./images/eu-taxonomy-3.png" /> */}
-			</div>
+			<div className="manage-img-wrap">{/* <img src="./images/eu-taxonomy-3.png" /> */}</div>
 		</section>
 	);
 }

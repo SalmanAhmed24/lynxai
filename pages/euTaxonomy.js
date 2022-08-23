@@ -26,24 +26,8 @@ function EuTaxonomy() {
 					</div>
 				</motion.section>
 			</section>
-			<section
-				className="tax-who-con"
-				data-aos="fade-in"
-				data-aos-duration="500"
-				data-aos-easing="ease-in-out"
-				data-aos-mirror="true"
-				data-aos-once="false"
-				data-aos-anchor-placement="top-center"
-			>
-				<section
-					className="tax-who-sec"
-					data-aos="fade-right"
-					data-aos-duration="1000"
-					data-aos-easing="ease-in-out"
-					data-aos-mirror="true"
-					data-aos-once="false"
-					data-aos-anchor-placement="top-center"
-				>
+			<section className="tax-who-con">
+				<section className="tax-who-sec">
 					<h1>What is EU Taxonomy?</h1>
 					<p>
 						The EU taxonomy is a classification system that establishes a list of environmentally
@@ -54,13 +38,7 @@ function EuTaxonomy() {
 					</p>
 				</section>
 			</section>
-			<section
-				className="tax-sol-con"
-				data-aos="fade-in"
-				data-aos-duration="1000"
-				data-aos-easing="ease-in-out"
-				data-aos-once="false"
-			>
+			<section className="tax-sol-con">
 				<section className="sol-sec">
 					<h1>Our Solutions</h1>
 					<div className="cards-wrap">

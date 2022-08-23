@@ -1,12 +1,6 @@
 function OurProduct() {
 	return (
-		<section
-			className="product-con"
-			data-aos="fade-in"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-once="false"
-		>
+		<section className="product-con">
 			<div className="product-h-wrap">
 				<h1>
 					Our<span> Products</span>
