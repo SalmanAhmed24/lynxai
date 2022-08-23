@@ -8,7 +8,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+	// clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
 	@include from-320-to-575 {
 		padding: $mobile-padding;
 	}
@@ -135,7 +135,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	clip-path: polygon(50% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+	// clip-path: polygon(50% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 	position: relative;
 	z-index: 4;
 	@include from-320-to-992 {
@@ -175,7 +175,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	clip-path: polygon(50% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+	// clip-path: polygon(50% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 	position: relative;
 	z-index: 3;
 	@include from-320-to-992 {
@@ -243,7 +243,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+	// clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 	position: relative;
 	z-index: 2;
 	@include from-320-to-992 {
