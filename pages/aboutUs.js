@@ -177,7 +177,7 @@ function AboutUs() {
 						</div>
 						<div className="overlay-card">
 							<ul>
-								<li>Author of Book "Fast Forward - B2B Sales for Startups"</li>
+								<li>Author of Book &quot;Fast Forward - B2B Sales for Startups&quot;</li>
 								<li>Managing Director and Owner at Cambridge Ventures UG</li>
 								<li>Managing Director at XPRENEURS incubator</li>
 							</ul>
@@ -272,7 +272,7 @@ function AboutUs() {
 						<div className="overlay-card">
 							<ul>
 								<li>Investor at Brainfood Ventures</li>
-								<li>Founder and Host at "the Most Awesome Founder Podcast"</li>
+								<li>Founder and Host at &quot;the Most Awesome Founder Podcast&quot;</li>
 								<li>Founder at WHU Accelerator</li>
 								<li>​Founder at Kula.com</li>
 							</ul>
