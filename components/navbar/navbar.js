@@ -32,7 +32,7 @@ function Navbar() {
 			router.push('/euTaxonomy');
 		}
 		if (e.target.innerText == 'Contact Us') {
-			router.push('/contact');
+			router.push('/demo');
 		}
 	};
 	return (
@@ -91,7 +91,7 @@ function Navbar() {
 							visible: { opacity: 1, x: 0, transition: { delay: 1, ease: 'easeInOut' } }
 						}}
 						className="simple-btn"
-						onClick={() => router.push('/contact')}
+						onClick={() => router.push('/demo')}
 					>
 						Contact Us
 					</motion.span>
@@ -127,7 +127,7 @@ function Navbar() {
 						</ul>
 					</div>
 					<div className="cat-btn-inner-wrap">
-						<span className="simple-btn" onClick={() => router.push('/contact')}>
+						<span className="simple-btn" onClick={() => router.push('/demo')}>
 							Contact Us
 						</span>
 						<span className="high-btn" onClick={() => router.push('/demo')}>

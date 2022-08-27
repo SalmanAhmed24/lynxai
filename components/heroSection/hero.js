@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 function HeroSection() {
+	const router = useRouter();
 	return (
 		<main className="bg-hero-con">
 			<motion.section
@@ -19,8 +21,12 @@ function HeroSection() {
 					<h1 className="upper-h">A data driven platform that makes ESG Investments Efficient</h1>
 				</div>
 				<div className="hero-btn-wrap">
-					<span className="high-btn">Request a demo</span>
-					<span className="simple-btn">Know More</span>
+					<span className="high-btn" onClick={() => router.push('/demo')}>
+						Request a demo
+					</span>
+					<span className="simple-btn" onClick={() => router.push('/aboutUs')}>
+						Know More
+					</span>
 				</div>
 			</motion.section>
 		</main>

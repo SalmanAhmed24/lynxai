@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 function EuTaxonomy() {
+	const router = useRouter();
 	return (
 		<main>
 			<section className="tax-hero-con">
@@ -21,8 +23,12 @@ function EuTaxonomy() {
 						<h1 className="upper-h">We help you manage EU Taxonomy</h1>
 					</div>
 					<div className="hero-btn-wrap">
-						<span className="high-btn">Request a demo</span>
-						<span className="simple-btn">Know More</span>
+						<span className="high-btn" onClick={() => router.push('/demo')}>
+							Request a demo
+						</span>
+						<span className="simple-btn" onClick={() => router.push('/aboutUs')}>
+							Know More
+						</span>
 					</div>
 				</motion.section>
 			</section>

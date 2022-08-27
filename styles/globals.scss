@@ -50,6 +50,10 @@ a {
 	margin: 0px;
 	padding: 0px;
 }
+input,
+textarea {
+	font-family: 'F37gingerpro', sans-serif !important;
+}
 h1 {
 	font-family: 'F37gingerpro', sans-serif !important;
 	@include from-320-to-575 {
@@ -155,3 +159,4 @@ $mobile-padding: 9rem 2rem;
 @import '../components/footer/footer.scss';
 @import './taxonomy.scss';
 @import './about.scss';
+@import './demo.scss';

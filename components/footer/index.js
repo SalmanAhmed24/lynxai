@@ -1,5 +1,20 @@
+import { useRouter } from 'next/router';
 function Footer() {
-	const footerHandler = (e) => console.log(e.target.innerText);
+	const router = useRouter();
+	const footerHandler = (e) => {
+		if (e.target.innerText == 'About Us') {
+			router.push('/aboutUs');
+		}
+		if (e.target.innerText == 'Home') {
+			router.push('/');
+		}
+		if (e.target.innerText == 'EU Taxonomy') {
+			router.push('/euTaxonomy');
+		}
+		if (e.target.innerText == 'Contact Us') {
+			router.push('/demo');
+		}
+	};
 	return (
 		<footer className="footer-con">
 			<div className="logo-sec">
@@ -8,7 +23,7 @@ function Footer() {
 				</div>
 				<p className="footer-p">LYNXAI a data-driven platform makes ESG Investment Efficient</p>
 				<div className="req-demo">
-					<h2>
+					<h2 onClick={() => router.push('/demo')}>
 						Try Our Demo<span>&#10140;</span>
 					</h2>
 				</div>

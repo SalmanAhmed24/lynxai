@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
+
 function DemoSection() {
+	const router = useRouter();
+
 	return (
 		<section className="demo-con">
 			<div className="demo-wrap">
@@ -8,8 +12,12 @@ function DemoSection() {
 					</h1>
 				</div>
 				<div className="demo-btn">
-					<span className="simple-btn">Know More</span>
-					<span className="high-btn">Try Our Demo</span>
+					<span className="simple-btn" onClick={() => router.push('/aboutUs')}>
+						Know More
+					</span>
+					<span className="high-btn" onClick={() => router.push('/demo')}>
+						Try Our Demo
+					</span>
 				</div>
 			</div>
 			<div className="overlay" />

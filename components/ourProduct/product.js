@@ -1,4 +1,6 @@
+import { useRouter } from 'next/router';
 function OurProduct() {
+	const router = useRouter();
 	return (
 		<section className="product-con">
 			<div className="product-h-wrap">
@@ -64,8 +66,12 @@ function OurProduct() {
 				</div>
 			</div>
 			<div className="product-btn-wrap">
-				<span className="simple-btn">Know More</span>
-				<span className="high-btn">Try our demo</span>
+				<span className="simple-btn" onClick={() => router.push('/aboutUs')}>
+					Know More
+				</span>
+				<span className="high-btn" onClick={() => router.push('/demo')}>
+					Try our demo
+				</span>
 			</div>
 			{/* <img src="./images/data-col-2.png" className="prod-bg-img" /> */}
 		</section>

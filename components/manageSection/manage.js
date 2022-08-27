@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import AOS from 'aos';
 function ManageSection() {
 	useEffect(() => {
 		AOS.init();
 	}, []);
+	const router = useRouter();
 	return (
 		<section className="manage-sec">
 			<div className="manage-h-wrap">
@@ -17,7 +19,9 @@ function ManageSection() {
 					<li>Match ESG standards with investments</li>
 				</ul>
 				<div className="high-btn-wrap">
-					<span className="high-btn">See Our Product Demo</span>
+					<span className="high-btn" onClick={() => router.push('/demo')}>
+						See Our Product Demo
+					</span>
 				</div>
 			</div>
 			<div className="manage-img-wrap">{/* <img src="./images/eu-taxonomy-3.png" /> */}</div>
