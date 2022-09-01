@@ -7,8 +7,18 @@ function Demo() {
 	const nameHandler = (e) => setName(e.target.value);
 	const emailHandler = (e) => setEmail(e.target.value);
 	const msgHandler = (e) => setMsg(e.target.value);
-	const formHandler = () => {
-		console.log('these are values', name, msg, email);
+	const formHandler = async () => {
+		try {
+			await fetch('http://localhost:3000/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ name, email, msg })
+			});
+		} catch (err) {
+			console.log(err);
+		}
 	};
 	return (
 		<main className="contact-sec">
